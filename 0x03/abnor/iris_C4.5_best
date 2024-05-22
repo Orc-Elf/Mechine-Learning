@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="petal length (cm) <= 2.45\nentropy = 1.581\nsamples = 90\nvalue = [27, 31, 32]\nclass = virginica", fillcolor="#fdfcff"] ;
+1 [label="entropy = 0.0\nsamples = 27\nvalue = [27, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.75\nentropy = 1.0\nsamples = 63\nvalue = [0, 31, 32]\nclass = virginica", fillcolor="#fbf9fe"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal length (cm) <= 5.35\nentropy = 0.523\nsamples = 34\nvalue = [0, 30, 4]\nclass = versicolor", fillcolor="#53e892"] ;
+2 -> 3 ;
+4 [label="petal width (cm) <= 1.45\nentropy = 0.337\nsamples = 32\nvalue = [0, 30, 2]\nclass = versicolor", fillcolor="#46e789"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 23\nvalue = [0, 23, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="sepal width (cm) <= 2.6\nentropy = 0.764\nsamples = 9\nvalue = [0, 7, 2]\nclass = versicolor", fillcolor="#72eca5"] ;
+4 -> 6 ;
+7 [label="sepal length (cm) <= 6.15\nentropy = 0.918\nsamples = 3\nvalue = [0, 1, 2]\nclass = virginica", fillcolor="#c09cf2"] ;
+6 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 2]\nclass = virginica", fillcolor="#8139e5"] ;
+7 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+7 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 6\nvalue = [0, 6, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+6 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 2]\nclass = virginica", fillcolor="#8139e5"] ;
+3 -> 11 ;
+12 [label="petal length (cm) <= 4.85\nentropy = 0.216\nsamples = 29\nvalue = [0, 1, 28]\nclass = virginica", fillcolor="#8640e6"] ;
+2 -> 12 ;
+13 [label="sepal length (cm) <= 5.95\nentropy = 0.918\nsamples = 3\nvalue = [0, 1, 2]\nclass = virginica", fillcolor="#c09cf2"] ;
+12 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+13 -> 14 ;
+15 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 2]\nclass = virginica", fillcolor="#8139e5"] ;
+13 -> 15 ;
+16 [label="entropy = 0.0\nsamples = 26\nvalue = [0, 0, 26]\nclass = virginica", fillcolor="#8139e5"] ;
+12 -> 16 ;
+}
